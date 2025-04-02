@@ -1,0 +1,53 @@
+// COLORS
+:root {
+  --button-color: #ffffff;
+  --background-color: #fbffff;
+  --primary-color: #b8860b;
+  --highlight-color: #d4a017;
+  --title-color: #000000;
+  --body-color: #64646a;
+  --border-color: #a8a8a8;
+
+
+  // PADDING
+  --padding-xs: 0.25rem;
+  --padding-s: 0.5rem;
+  --padding-m: 1rem;
+  --padding-l: 1.5rem;
+  --padding-xl: 2rem;
+  --padding-xxl: 3rem;
+  --padding-xxxl: 4rem;
+  --padding-xxxxl: 8rem;
+}
+
+// Define dark mode theme
+[data-theme="dark"] {
+  --button-color: #222222;
+  --background-color: #18181B;
+  --primary-color: #b8860b;
+  --highlight-color: #d4a017;
+  --title-color: #ffffff;
+  --body-color: #d3d3d3;
+  --border-color: #555555;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: aktiv-grotesk, sans-serif;
+  background-color: var(--background-color);
+  color: var(--body-color);
+
+  ::selection {
+    background-color: var(--primary-color); /* Change highlight color */
+    color: var(--background-color)!important; /* Change highlight text color */
+  }
+
+  h1, h2 {
+    color: var(--title-color);
+  }
+}
