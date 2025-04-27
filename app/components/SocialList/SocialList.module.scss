@@ -9,37 +9,6 @@
         color: var(--title-color)!important;
     }
 
-    .socialButton {
-        display: flex;
-        align-items: center;
-        gap: var(--padding-s);
-        line-height: 1;
-    
-        span, svg {
-            vertical-align: middle;
-        }
-    
-        svg {
-            fill: var(--title-color);
-            width: 1rem;
-            height: 1rem;
-            vertical-align: middle;
-        }
-    
-        &:hover {
-            cursor: pointer;
-    
-            span {
-                color: var(--primary-color);
-            }
-    
-            svg {
-                fill: var(--primary-color);
-            }
-        }
-    }
-    
-
     hr {
         border: 0.5px solid var(--body-color);
         width: 100%;

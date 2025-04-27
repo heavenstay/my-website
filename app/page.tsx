@@ -31,6 +31,7 @@ export default function Home() {
         </div>
       </main>
       <footer>
+        <span>© {new Date().getFullYear()} Even Soulard. All rights reserved.</span>
       </footer>
     </div>
   );

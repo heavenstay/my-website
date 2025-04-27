@@ -1,4 +1,4 @@
-// COLORS
+/* COLORS */
 :root {
   --button-color: #ffffff;
   --background-color: #fbffff;
@@ -8,8 +8,7 @@
   --body-color: #64646a;
   --border-color: #a8a8a8;
 
-
-  // PADDING
+  /* PADDING */
   --padding-xs: 0.25rem;
   --padding-s: 0.5rem;
   --padding-m: 1rem;
@@ -20,14 +19,14 @@
   --padding-xxxxl: 8rem;
 }
 
-// Define dark mode theme
+/* DARK THEME (user override) */
 [data-theme="dark"] {
   --button-color: #222222;
-  --background-color: #18181B;
+  --background-color: #1f2020;
   --primary-color: #b8860b;
   --highlight-color: #d4a017;
   --title-color: #ffffff;
-  --body-color: #d3d3d3;
+  --body-color: #c7c7c7;
   --border-color: #555555;
 }
 
@@ -43,8 +42,8 @@ body {
   color: var(--body-color);
 
   ::selection {
-    background-color: var(--primary-color); /* Change highlight color */
-    color: var(--background-color)!important; /* Change highlight text color */
+    background-color: var(--primary-color);
+    color: var(--background-color)!important;
   }
 
   h1, h2 {

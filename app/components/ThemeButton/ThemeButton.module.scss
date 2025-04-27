@@ -1,0 +1,39 @@
+.themeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 0.5px solid var(--border-color);
+  border-radius: 38px;
+  background-color: var(--button-color);
+  transition: all 200ms;
+  box-shadow: 0 0 5px rgba(var(--border-color), 0.2);
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  @media (hover: hover) {
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--button-color);
+        border-color: var(--primary-color);
+
+        svg {
+            fill: var(--button-color);
+        }
+    }
+  }
+
+  &:active {
+    transform: scale(0.95); 
+  }
+
+  svg {
+    fill: var(--title-color);
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+    transition: fill 0.2s ease-in-out;
+  }
+}   
